@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Sidebar } from "./Sidebar";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({currentSection}) => {
 
     const [sideBarOpen, setSideBarOpen] = useState(false);
 
@@ -32,13 +32,15 @@ export const Navbar = () => {
                 {/* TODO: Make solid white border bottom when option selected */}
 
                 <Link to="/">
-                    <span className="flex h-full items-center border-opacity-50 hover:border-b-[3px]">
+                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
+                    ${currentSection === 'home' && 'border-b-[3px] border-opacity-100'}`}>
                         <strong className="hidden lg:block">00&nbsp;</strong>
                         Home
                     </span>
                 </Link>
                 <Link to="/destination">
-                    <span className="flex h-full items-center border-opacity-50 hover:border-b-[3px]">
+                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
+                    ${currentSection === 'destination' && 'border-b-[3px] border-opacity-100'}`}>
                         <strong className="hidden lg:block">01&nbsp;</strong>
                         Destination
                     </span>
