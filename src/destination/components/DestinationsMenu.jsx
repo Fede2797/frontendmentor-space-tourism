@@ -1,6 +1,7 @@
 import { destinations } from "../../data/data.json";
+import { getDestinationData } from "../../helper/helper";
 
-export const DestinationsMenu = ({currentDestination, setCurrentDestination, getDestinationData}) => {
+export const DestinationsMenu = ({currentDestination, setCurrentDestination}) => {
   return (
     <div className="flex uppercase h-[28px] items-start gap-7 mb-[20px] text-sm tracking-[2.36px] font-barlowcondensed 
     text-light-blueish md:mb-8 lg:text-base lg:gap-8">
