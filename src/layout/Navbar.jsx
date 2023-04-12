@@ -30,6 +30,7 @@ export const Navbar = ({currentSection}) => {
             gap-[10%] uppercase font-barlowcondensed tracking-[2.3625px] text-sm px-[10%] lg:text-base">
                 
                 {/* TODO: Make solid white border bottom when option selected */}
+                {/* TODO: Make navbar unshrinkable with grow/shrink flex property */}
 
                 <Link to="/">
                     <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
