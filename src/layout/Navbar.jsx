@@ -34,28 +34,28 @@ export const Navbar = ({currentSection}) => {
 
                 <Link to="/">
                     <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'home' && 'border-b-[3px] border-opacity-100'}`}>
+                    ${currentSection === 'home' && 'border-b-[3px] !border-opacity-100'}`}>
                         <strong className="hidden lg:block">00&nbsp;</strong>
                         Home
                     </span>
                 </Link>
                 <Link to="/destination">
                     <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'destination' && 'border-b-[3px] border-opacity-100'}`}>
+                    ${currentSection === 'destination' && 'border-b-[3px] !border-opacity-100'}`}>
                         <strong className="hidden lg:block">01&nbsp;</strong>
                         Destination
                     </span>
                 </Link>
                 <Link to="/crew">
                     <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'crew' && 'border-b-[3px] border-opacity-100'}`}>
+                    ${currentSection === 'crew' && 'border-b-[3px] !border-opacity-100'}`}>
                         <strong className="hidden lg:block">02&nbsp;</strong>
                         Crew
                     </span>
                 </Link>
                 <Link to="/">
                     <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'technology' && 'border-b-[3px] border-opacity-100'}`}>
+                    ${currentSection === 'technology' && 'border-b-[3px] !border-opacity-100'}`}>
                         <strong className="hidden lg:block">03&nbsp;</strong>
                         Technology
                     </span>

@@ -22,20 +22,13 @@ export const Crew = () => {
           <div className="flex flex-col items-center lg:flex-row lg:w-full lg:h-full lg:justify-between">
 
             {/* Member image */}
-            {/* <img 
-              className={`max-h-[222px] md:order-3
-              ${ currentMember.name === 'Douglas Hurley' ? 'md:max-h-[562px]' : 'md:max-h-[532px]'}
-              lg:max-h-none`} 
-              src={currentMember.images.webp} 
-              alt="" 
-            /> */}
             <div
-              className={`max-h-[222px] md:order-3
-              ${ currentMember.name === 'Douglas Hurley' ? 'md:max-h-[562px] lg:-top-[58px]' : 'md:max-h-[532px]'}
-              lg:max-h-[640px] lg:relative lg:w-full lg:h-full `} 
+              className={`md:order-3 lg:relative lg:w-full lg:h-[620px]`} 
             >
               <img 
-                className="lg:absolute" src={currentMember.images.webp} alt="" 
+                className={`max-h-[222px] 
+                ${ currentMember.name === 'Douglas Hurley' ? 'md:max-h-[562px] lg:-top-[82px]' : 'md:max-h-[532px] lg:-top-[42px]'}
+                lg:absolute lg:max-h-none`} src={currentMember.images.webp} alt="" 
               />
             </div>
             {/* Separator */}
