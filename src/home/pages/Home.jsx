@@ -5,6 +5,7 @@ export const Home = () => {
     <HomeLayout>
         <div className="flex grow flex-col text-white my-16 justify-between items-center md:mt-[106px]
         lg:flex-row lg:items-end lg:px-[10%] lg:mb-28 lg:my-auto">
+
             {/* Main description */}
             <div className="flex flex-col gap-4 text-center max-w-[450px] lg:text-left lg:gap-6">
                 <h2 className="uppercase font-barlowcondensed tracking-[2.7px] md:text-xl lg:text-3xl">
@@ -17,6 +18,7 @@ export const Home = () => {
                   Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
                 </p>
             </div>
+            
             {/* Explore Button */}
             <div className="relative group">
               <div className="absolute hidden lg:block left-[-38px] top-[-38px] w-[350px] h-[350px] z-0 rounded-full

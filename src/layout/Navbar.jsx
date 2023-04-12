@@ -45,14 +45,16 @@ export const Navbar = ({currentSection}) => {
                         Destination
                     </span>
                 </Link>
-                <Link to="/">
-                    <span className="flex h-full items-center border-opacity-50 hover:border-b-[3px]">
+                <Link to="/crew">
+                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
+                    ${currentSection === 'crew' && 'border-b-[3px] border-opacity-100'}`}>
                         <strong className="hidden lg:block">02&nbsp;</strong>
                         Crew
                     </span>
                 </Link>
                 <Link to="/">
-                    <span className="flex h-full items-center border-opacity-50 hover:border-b-[3px]">
+                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
+                    ${currentSection === 'technology' && 'border-b-[3px] border-opacity-100'}`}>
                         <strong className="hidden lg:block">03&nbsp;</strong>
                         Technology
                     </span>
