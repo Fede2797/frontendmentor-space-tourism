@@ -16,9 +16,7 @@ export const MembersSlider = ({currentMember, setCurrentMember}) => {
                     key={index}
                     onClick={ () => setCurrentMember(getMemberData( index )) }
                     name="memberSelected"
-                    className={`w-[15px] h-[15px] appearance-none bg-white rounded-full opacity-[17%]
-                    hover:cursor-pointer
-                    ${ currentMember.name === member && '!opacity-100' }`}
+                    className={`w-[15px] h-[15px] appearance-none bg-white rounded-full opacity-[17%] hover:cursor-pointer ${ currentMember.name === member && '!opacity-100' }`}
                     type="radio"
                 />
             ))

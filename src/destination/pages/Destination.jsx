@@ -32,13 +32,14 @@ export const Destination = () => {
           <div className="lg:flex lg:gap-[11.5%] lg:justify-center">
 
             {/* Destination image */}
-            <img className="mx-auto w-[45%] max-w-[240px] mb-[26px] 
-            md:w-[39%] md:max-w-full md:mb-14 
-            lg:w-full lg:max-w-[445px] lg:max-h-[445px] lg:mx-0 lg:ml-[5%]" src={ currentDestination.images.webp } alt="" />
+            <img 
+              className="mx-auto w-[45%] max-w-[240px] mb-[26px] md:w-[39%] md:max-w-full md:mb-14 lg:w-full lg:max-w-[445px] lg:max-h-[445px] lg:mx-0 lg:ml-[5%]" 
+              src={ currentDestination.images.webp } 
+              alt="" 
+            />
             
             {/* Text section */}
-            <div className="flex flex-col items-center text-center 
-            lg:items-start lg:w-full lg:max-w-[35%]">
+            <div className="flex flex-col items-center text-center lg:items-start lg:w-full lg:max-w-[35%]">
               {/* Destinations menu */}
               <DestinationsMenu
                 setCurrentDestination={setCurrentDestination}
