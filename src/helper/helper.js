@@ -1,5 +1,4 @@
-import { destinations } from "../data/data.json";
-import { crew } from "../data/data.json";
+import { destinations, crew, technology } from "../data/data.json";
 
 export const getDestinationData = ( destinationName ) => {
     return destinations.find( 
@@ -9,4 +8,8 @@ export const getDestinationData = ( destinationName ) => {
 
 export const getMemberData = ( memberNumber ) => {
   return crew[memberNumber];
+}
+
+export const getTechnologyData = ( techNumber ) => {
+  return technology[techNumber];
 }

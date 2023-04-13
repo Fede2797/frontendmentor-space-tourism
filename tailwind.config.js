@@ -17,9 +17,9 @@ export default {
         'crew-tablet': "url('./images/crew/background-crew-tablet.jpg')",
         'crew-desktop': "url('./images/crew/background-crew-desktop.jpg')",
         // Technology bg-images
-        'destination-mobile': "url('./images/destination/background-destination-mobile.jpg')",
-        'destination-tablet': "url('./images/destination/background-destination-tablet.jpg')",
-        'destination-desktop': "url('./images/destination/background-destination-desktop.jpg')",
+        'technology-mobile': "url('./images/technology/background-technology-mobile.jpg')",
+        'technology-tablet': "url('./images/technology/background-technology-tablet.jpg')",
+        'technology-desktop': "url('./images/technology/background-technology-desktop.jpg')",
       },
       fontFamily: {
         'barlowcondensed': 'Barlow Condensed',
