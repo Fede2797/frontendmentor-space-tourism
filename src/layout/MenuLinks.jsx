@@ -14,7 +14,7 @@ export const MenuLinks = ({currentSection}) => {
         {
             menus.map( (menu, index) => (
                 <Link key={index} to={`/${ menu }`}>
-                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px] ${currentSection === menu ? 'border-b-[3px] !border-opacity-100' : ''}`}
+                    <span className={`flex h-full items-center border-b-[3px] border-opacity-0 hover:border-opacity-50 duration-75 ${currentSection === menu ? '!border-opacity-100' : ''}`}
                     >
                         <strong className="hidden lg:block">0{ index }&nbsp;</strong>
                         { menu }

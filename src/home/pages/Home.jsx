@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { HomeLayout } from "../layout/HomeLayout"
 
 export const Home = () => {
@@ -6,7 +7,7 @@ export const Home = () => {
         <div className="flex grow flex-col text-white my-16 justify-between items-center md:mt-[106px] lg:flex-row lg:items-end lg:px-[10%] lg:mb-28 lg:my-auto">
 
             {/* Main description */}
-            <div className="flex flex-col gap-4 text-center max-w-[450px] lg:text-left lg:gap-6">
+            <div className="flex flex-col gap-4 text-center max-w-[450px] lg:text-left lg:gap-6 animate__animated animate__fadeIn">
                 <h2 className="uppercase font-barlowcondensed tracking-[2.7px] md:text-xl lg:text-3xl">
                   So, you want to travel to
                 </h2>
@@ -20,11 +21,14 @@ export const Home = () => {
             
             {/* Explore Button */}
             <div className="relative group">
-              <div className="absolute hidden lg:block left-[-38px] top-[-38px] w-[350px] h-[350px] z-0 rounded-full bg-white opacity-0 duration-200 group-hover:opacity-10"></div>
+              {/* <div className="absolute hidden lg:block left-[-38px] top-[-38px] w-[350px] h-[350px] z-0 rounded-full bg-white opacity-0 duration-200 group-hover:opacity-10"></div> */}
               {/* TODO: Hacer que el halo blanco on hover sea una sombra blanca */}
-              <button className="relative  w-[150px] h-[150px] rounded-full bg-white text-black text-xl mx-auto uppercase font-bellefair tracking-[1.25px] justify-self-end md:w-[242px] md:h-[242px] md:text-[32px] md:tracking-[2px] lg:m-0 lg:w-[274px] lg:h-[274px]">
-                  Explore
-              </button>
+              <Link to={"/destination"}>
+                <button className="relative w-[150px] h-[150px] rounded-full bg-white text-black text-xl mx-auto uppercase font-bellefair tracking-[1.25px] justify-self-end md:w-[242px] md:h-[242px] md:text-[32px] md:tracking-[2px] lg:m-0 lg:w-[274px] lg:h-[274px]
+                hover:shadow-[0_0px_75px_10px_rgba(255,255,255,1)] duration-300">
+                    Explore
+                </button>
+              </Link>
             </div>
         </div>
     </HomeLayout>

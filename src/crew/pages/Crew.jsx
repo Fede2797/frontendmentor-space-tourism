@@ -21,7 +21,7 @@ export const Crew = () => {
           {/* Member image */}
           <div className="flex w-full justify-center md:order-4 lg:order-2 lg:row-span-3">
             <img 
-              className={`max-h-[222px] ${ currentMember.name === 'Douglas Hurley' ? 'md:max-h-[572px]' : 'md:max-h-[548px]'} lg:max-w-full lg:max-h-none lg:mt-auto`} src={currentMember.images.webp} alt="" 
+              className={`max-h-[222px] ${ currentMember.name === 'Douglas Hurley' ? 'md:max-h-[572px]' : 'md:max-h-[548px]'} lg:max-w-full lg:max-h-none lg:mt-auto animate__animated animate__fadeIn`} src={currentMember.images.webp} alt="" 
             />
           </div>
 
@@ -32,7 +32,7 @@ export const Crew = () => {
           <MembersSlider currentMember={currentMember} setCurrentMember={setCurrentMember} />
 
           {/* Member info */}
-          <div className="text-center md:order-2 md:max-w-[63%] md:justify-self-center lg:text-left lg:max-w-none lg:justify-self-start">
+          <div className="text-center md:order-2 md:max-w-[63%] md:justify-self-center lg:text-left lg:max-w-none lg:justify-self-start animate__animated animate__fadeIn">
             <h2 className="font-bellefair uppercase opacity-50 mb-2 md:text-2xl lg:text-[32px] lg:mb-[15px]">
               {currentMember.role}
             </h2>

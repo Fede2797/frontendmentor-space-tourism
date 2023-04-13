@@ -21,7 +21,7 @@ export const Technology = () => {
           {/* Secondary container */}
           <div className="lg:flex lg:w-full lg:flex-row-reverse lg:ml-auto lg:justify-between lg:gap-[50px] 2xl:gap-[100px]">
             {/* Rocket img */}
-            <div className="mx-[-24px] lg:w-auto xl:min-w-[515px] lg:ml-0">
+            <div className="mx-[-24px] lg:w-auto xl:min-w-[515px] lg:ml-0 animate__animated animate__fadeIn">
               <img className="w-full lg:hidden" src={currentTechnology.images.landscape} alt="" />
               <img className="hidden lg:block lg:ml-auto lg:my-auto" src={currentTechnology.images.portrait} alt="" />
             </div>
@@ -32,7 +32,7 @@ export const Technology = () => {
                 {/* Options menu */}
                 <TechOptions currentTechnology={currentTechnology} setCurrentTechnology={setCurrentTechnology} />
                 {/* Info */}
-                <div className="text-center md:max-w-[59.5%] md:mx-auto md:mb-6 lg:max-w-none lg:ml-[80px] lg:text-left">
+                <div className="text-center md:max-w-[59.5%] md:mx-auto md:mb-6 lg:max-w-none lg:ml-[80px] lg:text-left animate__animated animate__fadeIn">
                   <h2 className="mb-[9px] text-sm font-barlowcondensed text-light-blueish tracking-[2.36px] uppercase md:text-base md:mb-4 lg:mb-[11px] lg:tracking-[2.7px]">
                     The terminology...
                   </h2>

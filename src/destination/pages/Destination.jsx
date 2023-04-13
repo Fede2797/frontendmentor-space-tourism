@@ -1,6 +1,6 @@
 import { DestinationLayout } from "../layout/DestinationLayout";
 import { destinations } from "../../data/data.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DestinationsMenu } from "../components/DestinationsMenu";
 import { DestinationBody } from "../components/DestinationBody";
 import { getDestinationData } from "../../helper/helper";
@@ -33,7 +33,7 @@ export const Destination = () => {
 
             {/* Destination image */}
             <img 
-              className="mx-auto w-[45%] max-w-[240px] mb-[26px] md:w-[39%] md:max-w-full md:mb-14 lg:w-full lg:max-w-[445px] lg:max-h-[445px] lg:mx-0 lg:ml-[5%]" 
+              className="mx-auto w-[45%] max-w-[240px] mb-[26px] md:w-[39%] md:max-w-full md:mb-14 lg:w-full lg:max-w-[445px] lg:max-h-[445px] lg:mx-0 lg:ml-[5%] animate__animated animate__fadeIn"
               src={ currentDestination.images.webp } 
               alt="" 
             />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const Sidebar = ({toggleSideBarOpen}) => {
   return (
     <div className="flex">
-        <div className='fixed flex flex-col gap-7 top-0 right-0 z-10 h-screen bg-white bg-opacity-5 p-6 pl-8 w-2/3 text-white backdrop-blur-2xl font-barlowcondensed uppercase tracking-[2.7px]'>
+        <div className='fixed flex flex-col gap-7 top-0 right-0 z-10 h-screen bg-white bg-opacity-5 p-6 pl-8 w-2/3 text-white backdrop-blur-2xl font-barlowcondensed uppercase tracking-[2.7px] animate__animated animate__slideInRight'>
             <div className="flex justify-end">
                 <button 
                   onClick={ toggleSideBarOpen }
