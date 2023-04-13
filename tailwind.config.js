@@ -7,7 +7,7 @@ export default {
         // Home bg-images
         'mobile': "url('./images/home/background-home-mobile.jpg')",
         'tablet': "url('./images/home/background-home-tablet.jpg')",
-        'desktop': "url('./images/home/background-home-desktop.jpg')",
+        'desktop': "url('../images/home/background-home-desktop.jpg')",
         // Destination bg-images
         'destination-mobile': "url('./images/destination/background-destination-mobile.jpg')",
         'destination-tablet': "url('./images/destination/background-destination-tablet.jpg')",
