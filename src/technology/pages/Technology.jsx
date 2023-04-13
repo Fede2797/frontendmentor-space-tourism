@@ -19,7 +19,7 @@ export const Technology = () => {
           </div>
 
           {/* Secondary container */}
-          <div className="lg:flex lg:w-full lg:flex-row-reverse lg:ml-auto lg:justify-between 2xl:gap-[100px]">
+          <div className="lg:flex lg:w-full lg:flex-row-reverse lg:ml-auto lg:justify-between lg:gap-[50px] 2xl:gap-[100px]">
             {/* Rocket img */}
             <div className="mx-[-24px] lg:w-auto xl:min-w-[515px] lg:ml-0">
               <img className="w-full lg:hidden" src={currentTechnology.images.landscape} alt="" />
