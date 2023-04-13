@@ -23,6 +23,7 @@ export const Home = () => {
             <div className="relative group">
               <div className="absolute hidden lg:block left-[-38px] top-[-38px] w-[350px] h-[350px] z-0 rounded-full
               bg-white opacity-0 duration-200 group-hover:opacity-10"></div>
+              {/* TODO: Hacer que el halo blanco on hover sea una sombra blanca */}
               <button className="relative  w-[150px] h-[150px] rounded-full bg-white text-black text-xl mx-auto uppercase
               font-bellefair tracking-[1.25px] justify-self-end md:w-[242px] md:h-[242px] md:text-[32px] md:tracking-[2px]
               lg:m-0 lg:w-[274px] lg:h-[274px] z-20">

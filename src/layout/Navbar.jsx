@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sidebar } from "./Sidebar";
 import { Link } from "react-router-dom";
+import { MenuLinks } from "./MenuLinks";
 
 export const Navbar = ({currentSection}) => {
 
@@ -13,6 +14,7 @@ export const Navbar = ({currentSection}) => {
     return (
         // Logo & Menu
         <div className='relative flex justify-between h-[40px] md:h-24 md:items-center lg:mt-10'>
+            
             {/* Logo */}
             <div className="flex items-center">
                 <Link to="/">
@@ -25,42 +27,11 @@ export const Navbar = ({currentSection}) => {
             <button className="md:hidden" onClick={ toggleSideBarOpen }>
                 <img className={`max-h-full ${ sideBarOpen && 'hidden' }`} src="./images/shared/icon-hamburger.svg" alt="" />
             </button>
-            {/* Menu for medium/large screens */}
-            <div className="hidden md:flex w-[58vw] h-full bg-white mr-[-24px] backdrop-blur-2xl bg-opacity-5 text-white
-            gap-[10%] uppercase font-barlowcondensed tracking-[2.3625px] text-sm px-[10%] lg:text-base">
-                
-                {/* TODO: Make solid white border bottom when option selected */}
-                {/* TODO: Make navbar unshrinkable with grow/shrink flex property */}
 
-                <Link to="/">
-                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'home' && 'border-b-[3px] !border-opacity-100'}`}>
-                        <strong className="hidden lg:block">00&nbsp;</strong>
-                        Home
-                    </span>
-                </Link>
-                <Link to="/destination">
-                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'destination' && 'border-b-[3px] !border-opacity-100'}`}>
-                        <strong className="hidden lg:block">01&nbsp;</strong>
-                        Destination
-                    </span>
-                </Link>
-                <Link to="/crew">
-                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'crew' && 'border-b-[3px] !border-opacity-100'}`}>
-                        <strong className="hidden lg:block">02&nbsp;</strong>
-                        Crew
-                    </span>
-                </Link>
-                <Link to="/">
-                    <span className={`flex h-full items-center border-opacity-50 hover:border-b-[3px]
-                    ${currentSection === 'technology' && 'border-b-[3px] !border-opacity-100'}`}>
-                        <strong className="hidden lg:block">03&nbsp;</strong>
-                        Technology
-                    </span>
-                </Link>
-            </div>
+            {/* Menu for medium/large screens */}
+            <MenuLinks currentSection={currentSection}/>
+
+            {/* Sidebar for mobile screen */}
             {
                 sideBarOpen && (
                     <Sidebar toggleSideBarOpen={toggleSideBarOpen}/>
