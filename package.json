@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://fede2797.github.io/frontendmentor-space-tourism/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

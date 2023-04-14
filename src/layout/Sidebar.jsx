@@ -9,10 +9,10 @@ export const Sidebar = ({toggleSideBarOpen}) => {
                   onClick={ toggleSideBarOpen }
                   className='mt-[11px] mr-[2px] mb-8'
                 >
-                    <img src="./images/shared/icon-close.svg" alt="" />
+                    <img src="images/shared/icon-close.svg" alt="" />
                 </button>
             </div>
-            <Link to="/"><strong>00</strong> Home</Link>
+            <Link to="/home"><strong>00</strong> Home</Link>
             <Link to="/destination"><strong>01</strong> Destination</Link>
             <Link to="/crew"><strong>02</strong> Crew</Link>
             <Link to="/technology"><strong>03</strong> Technology</Link>
