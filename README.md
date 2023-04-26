@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Fede2797/frontendmentor-space-tourism
-- Live Site URL: https://fede2797.github.io/frontendmentor-space-tourism/#/home
+- Live Site URL: https://fede2797.github.io/frontendmentor-space-tourism/
 
 ### Built with
 
